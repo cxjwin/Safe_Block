@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "BLObject.h"
 #import "BLObjectManager.h"
+#import <malloc/malloc.h>
 
 @interface SecondViewController ()
 
@@ -68,20 +69,27 @@
 
 - (void)clickButton:(UIButton *)button
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
+#define UseKernelFunction 
 - (void)testBlock
 {
     __block BLObject *weakObj = self.testObject;
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-        NSLog(@"%s", __func__);
+		NSLog(@"%s", __func__);
+#ifdef UseKernelFunction
+		if (malloc_zone_from_ptr(weakObj)) {
+            [weakObj testLog];
+        }
+#else
         NSValue *pvalue = [NSValue valueWithPointer:weakObj];
         if ([[BLObjectManager defaultSet] containsObject:pvalue]) {
             [weakObj testLog];
         }
+#endif
     });
 }
 
