@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>51050C0F-98A6-4DBA-BB8B-9D8091D73FD4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Safe_Block</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F46229FB-EB6D-4DC2-BFC3-360190017A23</key>
+		<string>https://github.com/cxjwin/Safe_Block.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Safe_Block.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F46229FB-EB6D-4DC2-BFC3-360190017A23</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cxjwin/Safe_Block.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F46229FB-EB6D-4DC2-BFC3-360190017A23</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F46229FB-EB6D-4DC2-BFC3-360190017A23</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Safe_Block</string>
+		</dict>
+	</array>
+</dict>
+</plist>
